@@ -3,8 +3,18 @@
 <head>
     <h1>The Hittites</h1>
 </head>
+    <script>
+$('.select-language').on('change',function(){
+    var value = $(this).val();
+    location.href = value; //or .php, etc. This will go to a page called en.html
+    });
+</script>
 <body>
- <form > <select name="Different Periods Of TIme" onChange="window.open(this.options[this.selectedIndex].value,'_self')"> <option value="https://nerd2webwizard.github.io/Website1/Index.html ">Bronze Age</option> <option value="http://127.0.0.1:5500/Index2.html">Iron Age</option> </select> </form>     
+ <form > <select name="Different Periods Of TIme" class="select-language selectpicker"> 
+     <option value="https://nerd2webwizard.github.io/Website1/Index.html ">Bronze Age</option>
+     <option value="https://nerd2webwizard.github.io/2ndWebsite/Index2.html">Iron Age</option> 
+     </select> 
+    </form>     
 </select>
 <h2> General Information</h2>
 <p>The Hittites founded one of the great empires of the ancient Middle East between 1400 and 1200 B.C.E. At its height, the empire included Upper Mesopotamia, central Turkey, and northwestern Syria (north eastern Syria and northern Iraq). The Hittites acquired many Mesopotamian customs, notably the cuneiform writing system, while speaking an Indo-European language. Archaeologists have uncovered cuneiform-written clay tablets with royal archives from the capital, Hattusa.</p>
